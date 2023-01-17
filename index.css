@@ -1,0 +1,179 @@
+
+/* :root puede ser útil para declarar variables CSS globales */
+:root{
+    --color-secondary: rgb(23, 173, 121);
+    --color-white: #fff;
+    --color-fuente:darkslategrey;
+    --color-sombra: rgba(0, 0, 0, 0.5);
+    --color-claro: rgb(49, 136, 54);
+    --color-white: rgb(255, 255, 255);
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    margin: 0;
+    background-image: url(IMG/fondo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--color-sombra);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+/*Estilos al HEADER*/
+header {
+    display: flex; 
+    height: 65px; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color-fuente);
+}
+.logoHeader{
+    display: flex;
+    align-items: center;
+}
+.logoHeader img{
+    height: 60px;
+    margin-right: 10px;
+}
+.logoHeader h2{
+    color: rgb(255, 255, 255);
+}
+h1{
+    text-shadow: 0 0 5px rgb(0, 255, 128), 0 0 15px rgb(0, 255, 128), 0 0 30px rgb(0, 255, 128), 0 0 50px rgb(0, 255, 128);
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+p{
+    font-size: 1.25em;
+}
+
+/*Estilos em los botones*/
+button{
+    margin-right: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid var(--color-sombra);
+    box-shadow: 2px 2px 10px var(--color-sombra);
+    color: white;
+    background-color: var(--color-fuente);
+}
+button:hover{
+    background-color: rgb(91, 145, 145);
+    color: black;
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    padding: 0.5px;
+    text-align: center;
+    margin-bottom:0vmin;
+}
+
+label{
+    text-shadow: 0 0 5px gold, 0 0 15px gold, 0 0 30px gold, 0 0 50px gold;
+    color: rgb(255, 230, 91);
+    font-size: 1em;
+    font-weight: bold;
+}
+textarea{
+    width: 800px;
+    height: 120px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0.17rem solid var(--color-secondary);
+    border-radius: 10px;
+    color: var(--color-white);
+}
+
+textarea:focus-visible{
+    outline: none;
+    box-shadow: 0 0 0.5rem var(--color-secondary);
+}
+
+.contador {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(176, 255, 85), 0 0 15px rgb(176, 255, 85), 0 0 30px rgb(176, 255, 85), 0 0 50px rgb(176, 255, 85);
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0.17rem solid var(--color-secondary);
+    border-radius: 5px;
+    color: var(--color-white);
+    padding: 5px;
+}
+input:focus-visible{
+    outline: none;
+    box-shadow: 0 0 0.5rem var(--color-secondary);
+}
+.result {
+    width: 500px;
+    margin: 20px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0.17rem solid var(--color-secondary);
+    border-radius: 5px;
+    color: var(--color-white);
+    padding: 5px;
+}
+span {
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+    text-shadow: 0 0 5px rgb(0, 153, 255), 0 0 15px rgb(0, 153, 255), 0 0 30px rgb(0, 153, 255), 0 0 50px rgb(0, 153, 255);
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: var(--color-fuente);
+}
+
+.btn1, .btn2 {
+    margin-left: 20px;
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 5px 7px;
+    border-radius: 7px;
+    border: 1px solid var(--color-sombra);
+    box-shadow: 2px 2px 10px var(--color-sombra);
+    color: rgb(0, 0, 0);
+    background-color: var(--color-white);
+}
+.btn1:hover{
+    background-color: var(--color-secondary);
+}
+.btn2:hover{
+    background-color: var(--color-secondary);
+}
+.btn3{
+    margin-right: 600px;
+    margin-top: 8px;
+    font-size: 0.9em;
+    background-color: var(--color-white);
+    padding: 7px 15px;
+    color: black;
+}
+.btn3:hover{
+    background-color: var(--color-secondary);
+}

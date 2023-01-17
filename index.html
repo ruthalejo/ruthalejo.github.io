@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- lang = "esp.añol" -->
+<html lang="en">
+    <head>
+        <!-- METADATOS -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DE-code</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- Para llamar el CSS a nuestro HTML -->
+        <link rel="shortcut icon" href="IMG/favicon2.png" type="image/x-icon">
+        <!-- Para colocar ICON a nuestra pagina web -->
+        <!-- <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.3/dist/clipboard.min.js"></script> -->
+    </head>
+    <body>
+        <header>
+            <div class="logoHeader">
+                <img src="IMG/favicon.png" alt="logo" class="logo-img">
+                <h2 class="marca">DE-code</h2>
+            </div>
+        </header>
+        <main>
+            <section id="crip">
+                <div class="container">
+                    <h1>MENSAJES EN CÓDIGO</h1>
+                    <div id="menssaje">
+                        <textarea id="msg" type="text" name="textarea" maxlength="280" spellcheck="false"></textarea>
+                        <!-- campo para poder introducir datos -->
+                        <br>
+                        <button onclick="limpiarRellenado()" value="Limpiar Rellenado" class="btn3">Limpiar</button> <span id="conter" class="contador">0/280</span>
+                        <br>
+                        <label>Clave secreta:</label>
+                        <input id="passwd" type="password" name="password" inputmode="numeric" pattern="[0-9]" autocomplete="off">
+                        <br>
+                        <br>
+                        <button id="cifrado" onclick="encriptar()">Encriptar</button>
+                        <button id="descrifrado" onclick="desencriptar()">Desencriptar</button>
+                        <br>
+                        <br>
+                        <br>
+                        <label>Mensaje Encriptado</label>
+                        <span id="msgcifrado"></span> <button class="btn1" onclick="copyToClickBoard()">Copiar</button>
+                        <br>
+                        <br>
+                        <label>Mensaje Real</label>
+                        <span id="msgdescifrado"></span> <button class="btn2" onclick="copyToClickBoard2()">Copiar</button>
+                        <br>
+                        <br>
+                        <button onclick="resetGame()" value="Reiniciar">Reiniciar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="err">
+                <span id="error"></span>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <p>	&copy; Todos los derechos reservados</p>
+            </div>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
